@@ -1,0 +1,2729 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>মায়াবিনী ✨</title>
+
+
+<!-- =====================================================
+     BENGALI FONTS
+===================================================== -->
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
+
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-height: 100%;
+
+    scroll-behavior: auto;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+
+    font-family:
+        "Hind Siliguri",
+        sans-serif;
+
+    color: #554653;
+
+    overflow-x: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            #ffe6f1,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            #e8e0ff,
+            transparent 32%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff9fc,
+            #faf7ff
+        );
+}
+
+
+/* =====================================================
+   BACKGROUND DECORATION
+===================================================== */
+
+.bg {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    overflow: hidden;
+
+    z-index: 0;
+}
+
+.bg span {
+
+    position: absolute;
+
+    font-size: 25px;
+
+    opacity: .25;
+
+    animation:
+        float 7s ease-in-out infinite;
+}
+
+.bg span:nth-child(1) {
+    left: 8%;
+    top: 12%;
+}
+
+.bg span:nth-child(2) {
+    right: 10%;
+    top: 20%;
+
+    animation-delay: 1.5s;
+}
+
+.bg span:nth-child(3) {
+    left: 12%;
+    bottom: 15%;
+
+    animation-delay: 3s;
+}
+
+.bg span:nth-child(4) {
+    right: 15%;
+    bottom: 12%;
+
+    animation-delay: 4s;
+}
+
+
+@keyframes float {
+
+    50% {
+        transform:
+            translateY(-20px)
+            rotate(8deg);
+    }
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+
+    position: relative;
+
+    z-index: 1;
+
+    width: 100%;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 15px;
+}
+
+
+/* =====================================================
+   MAIN CARD
+
+   IMPORTANT:
+   display:block is used so the browser does not
+   vertically center the content and clip the title.
+===================================================== */
+
+.card {
+
+    width: min(720px, 100%);
+
+    min-height: 680px;
+
+    max-height:
+        calc(100vh - 30px);
+
+    padding:
+        40px 35px;
+
+    border-radius: 28px;
+
+    background:
+        rgba(255,255,255,.84);
+
+    border:
+        1px solid
+        rgba(255,255,255,.95);
+
+    box-shadow:
+        0 25px 70px
+        rgba(80,55,80,.15);
+
+    backdrop-filter:
+        blur(15px);
+
+    display: block;
+
+    overflow-y: auto;
+
+    overflow-x: hidden;
+
+    scroll-behavior: auto;
+
+    position: relative;
+
+    -webkit-overflow-scrolling:
+        touch;
+}
+
+
+/* =====================================================
+   SLIDE
+===================================================== */
+
+.slide {
+
+    width: 100%;
+
+    min-height: auto;
+
+    text-align: center;
+
+    padding-top: 20px;
+
+    padding-bottom: 30px;
+
+    animation:
+        appear .5s ease;
+
+    flex-shrink: 0;
+}
+
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+
+/* =====================================================
+   TITLE
+
+   Kept at similar size instead of making the title
+   excessively large.
+===================================================== */
+
+.title {
+
+    font-family:
+        "Atma",
+        "Hind Siliguri",
+        sans-serif;
+
+    font-size:
+        clamp(29px, 5vw, 38px);
+
+    line-height: 1.4;
+
+    font-weight: 600;
+
+    color: #704d68;
+
+    margin:
+        0 auto 22px;
+
+    max-width: 620px;
+}
+
+
+/* =====================================================
+   TEXT
+===================================================== */
+
+.text {
+
+    font-family:
+        "Hind Siliguri",
+        sans-serif;
+
+    font-size:
+        clamp(17px, 3vw, 20px);
+
+    line-height: 1.9;
+
+    white-space: pre-line;
+
+    max-width: 620px;
+
+    margin: auto;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.buttons {
+
+    margin-top: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+button {
+
+    border: 0;
+
+    border-radius: 50px;
+
+    padding:
+        13px 24px;
+
+    min-height: 50px;
+
+    min-width: 125px;
+
+    font-family:
+        "Hind Siliguri",
+        sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    touch-action: manipulation;
+
+    -webkit-tap-highlight-color:
+        transparent;
+
+    transition:
+        transform .2s ease;
+}
+
+
+button:active {
+
+    transform:
+        scale(.95);
+}
+
+
+/* YES */
+
+.yes {
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #a86791,
+            #8066b0
+        );
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(120,80,150,.25);
+}
+
+
+/* NO */
+
+.no {
+
+    color: #635361;
+
+    background: #eee6ed;
+}
+
+
+/* =====================================================
+   OPENING EMOJI
+===================================================== */
+
+.openEmoji {
+
+    height: 130px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 68px;
+
+    margin-top: 15px;
+}
+
+
+.emojiShow {
+
+    animation:
+        emoji .65s ease;
+}
+
+
+@keyframes emoji {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(.5);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1);
+    }
+}
+
+
+/* =====================================================
+   DATE / TIME PICKER
+===================================================== */
+
+.picker {
+
+    width:
+        min(420px, 100%);
+
+    margin:
+        30px auto 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+.picker label {
+
+    text-align: left;
+
+    font-size: 17px;
+
+    font-weight: 600;
+}
+
+
+.picker input {
+
+    display: block;
+
+    width: 100%;
+
+    margin-top: 7px;
+
+    padding: 13px;
+
+    border-radius: 14px;
+
+    border:
+        1px solid
+        #ded1dc;
+
+    background: #fff;
+
+    font-family:
+        "Hind Siliguri",
+        sans-serif;
+
+    font-size: 17px;
+
+    outline: none;
+}
+
+
+.picker input:focus {
+
+    border-color: #9c7aaa;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(156,122,170,.12);
+}
+
+
+/* =====================================================
+   TIME INFO
+===================================================== */
+
+.time-info {
+
+    margin-top: 10px;
+
+    font-size: 15px;
+
+    opacity: .75;
+}
+
+
+/* =====================================================
+   FINAL RUN AREA
+===================================================== */
+
+.run-area {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: 250px;
+
+    margin:
+        25px auto 0;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+}
+
+
+/* YES stays normal */
+
+.final-yes {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 30%;
+
+    transform:
+        translate(-50%, -50%);
+}
+
+
+/* NO runs */
+
+.run-no {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 70%;
+
+    transform:
+        translate(-50%, -50%);
+
+    transition:
+        left .16s ease,
+        top .16s ease;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .page {
+
+        min-height: 100vh;
+
+        padding: 8px;
+
+        align-items: flex-start;
+    }
+
+
+    .card {
+
+        width: 100%;
+
+        min-height:
+            calc(100vh - 16px);
+
+        max-height:
+            calc(100vh - 16px);
+
+        padding:
+            20px 17px 30px;
+
+        border-radius: 23px;
+
+        display: block;
+
+        overflow-y: auto;
+
+        overflow-x: hidden;
+
+        scroll-behavior: auto;
+    }
+
+
+    .slide {
+
+        width: 100%;
+
+        min-height: auto;
+
+        padding-top: 20px;
+
+        padding-bottom: 30px;
+    }
+
+
+    .title {
+
+        font-size: 29px;
+
+        line-height: 1.4;
+
+        margin-top: 0;
+
+        margin-bottom: 20px;
+    }
+
+
+    .text {
+
+        font-size: 17px;
+
+        line-height: 1.85;
+    }
+
+
+    .buttons {
+
+        margin-top: 25px;
+
+        gap: 10px;
+    }
+
+
+    button {
+
+        min-height: 52px;
+
+        min-width: 120px;
+
+        padding:
+            11px 18px;
+
+        font-size: 17px;
+    }
+
+
+    .openEmoji {
+
+        font-size: 62px;
+
+        height: 120px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .card {
+
+        padding-left: 13px;
+
+        padding-right: 13px;
+    }
+
+
+    .title {
+
+        font-size: 27px;
+    }
+
+
+    .text {
+
+        font-size: 16px;
+    }
+
+
+    button {
+
+        min-width: 110px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BACKGROUND
+===================================================== -->
+
+<div class="bg">
+
+    <span>🌸</span>
+
+    <span>✨</span>
+
+    <span>🦋</span>
+
+    <span>🌙</span>
+
+</div>
+
+
+<!-- =====================================================
+     PAGE
+===================================================== -->
+
+<div class="page">
+
+    <div
+        class="card"
+        id="card">
+
+    </div>
+
+</div>
+
+
+
+<script>
+
+
+/* =====================================================
+   YOUR WHATSAPP NUMBER
+
+   CHANGE THIS.
+
+   Example for India:
+
+   919876543210
+
+   Do NOT add:
+   +
+   spaces
+   brackets
+===================================================== */
+
+const WHATSAPP_NUMBER =
+    "919475026338";
+
+
+
+/* =====================================================
+   SLIDES
+
+   Slide 1 here = "মায়াবিনী"
+   It automatically continues after 55 seconds.
+
+   Clicking YES moves immediately.
+===================================================== */
+
+const slides = [
+
+/* =====================================================
+   SLIDE 2 — মায়াবিনী
+===================================================== */
+
+{
+
+    title:
+        "এই যে মায়াবিনী… ✨",
+
+    text:
+`আমি তোমার আসল নাম জানি না,
+তাই তোমাকে “মায়াবিনী” বললাম। ✨
+
+কেন বললাম,
+সেটা কোনো একদিন বলবো… 😉
+
+তবে এখন যেটা বলতে চলেছি,
+তাতে আছে—
+
+কিছুটা আশ্চর্য,
+কিছুটা পাগলামি,
+একটু দুষ্টুমি,
+আর অনেকটা অনেকটা অনুভূতি… 🥹
+
+তুমি কি সেটা জানতে চাও? 👀🫣`,
+
+    yes:
+        "হ্যাঁ, জানতে চাই ✨",
+
+    no:
+        null,
+
+    auto:
+        true,
+
+    /* 55 seconds */
+
+    autoDelay:
+        55000
+
+},
+
+
+/* =====================================================
+   SLIDE 3 — সেই মায়া
+===================================================== */
+
+{
+
+    title:
+        "তোমার মধ্যে একটা মায়া আছে… ✨",
+
+    text:
+`যেটা ঠিক ভাষায় বোঝানো যায় না।
+
+এই মায়া সবাই সবার জন্য অনুভব করে না…
+
+যেমন তোমার মধ্যে যে মায়ার কথা বলছি,
+হয়তো তুমি নিজেও সেটা কখনও অনুভব করোনি…
+
+কিন্তু আমি করেছি। 🥹
+
+তোমার চোখ… 👀
+
+তোমার তাকানোর স্বচ্ছন্দতা… ✨
+
+সব মিলিয়ে
+এক অন্যরকম মায়া,
+এক অন্যরকম অনুভূতি…
+
+আর সেই অনুভূতিটাই হয়তো
+আমাকে একটু একটু করে
+তোমার দিকে টেনে নিয়েছে। 🫶🏻`,
+
+    yes:
+        "তারপর কী হলো? 👀",
+
+    no:
+        null
+
+},
+
+
+/* =====================================================
+   SLIDE 4 — পরিচিত হবে?
+===================================================== */
+
+{
+
+    title:
+        "পরিচিত হবে? 🌙",
+
+    text:
+`আমার কথা শুনে তোমার কি আমাকে পাগল মনে হচ্ছে? 😌
+
+জীবনের বাস্তবতা থেকে একটু সময় নিয়ে,
+যদি কোনো একদিন নিজেকে আয়নায় দেখো…
+তাহলে হয়তো আমার কথাগুলো
+তোমারও সত্যি মনে হবে। ✨
+
+আর আমাকে জানতে হলে,
+আমার সঙ্গে একটু পরিচিত হতে পারো। 🫶🏻
+
+আর একটা কথা—
+
+আমার সঙ্গে পরিচিত হয়ে ভুল করেছো,
+এমনটা প্রমাণ হওয়ার সম্ভাবনা খুবই কম। 😉
+
+বরং হয়তো একদিন মনে হবে…
+
+তাহলে বলো…
+
+পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 5
+===================================================== */
+
+{
+
+    title:
+        "আচ্ছা… তুমি না বললে? 🥺",
+
+    text:
+`ঠিক আছে, আমি জোর করব না…
+
+কিন্তু যাওয়ার আগে আমার কয়েকটা কথা শুনে যাও। 😌
+
+আমি তোমাকে কখনও bore করব না।
+
+তোমার secret আমার কাছেই safe থাকবে। 🤫
+
+তোমার পছন্দের topic নিয়ে
+তোমার সাথেই gossip করব। 🤭
+
+তোমার opinion-কে respect করব…
+যদিও মাঝে মাঝে একটু debate করব। 😌
+
+আর তোমার দিনটা খারাপ গেলে…
+
+তোমাকে হাসানোর জন্য
+আমার সব বাজে joke বের করে আনব। 🤡
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 6
+===================================================== */
+
+{
+
+    title:
+        "আবারও না? 😭",
+
+    text:
+`ঠিক আছে… আরও কিছু বলি। 🥹
+
+তুমি মন খারাপ করলে
+“কী হয়েছে?” বলে বিরক্ত করব না…
+
+আগে পাশে থাকব। 🫶🏻
+
+তুমি কোনো কিছু নিয়ে excited হলে,
+তোমার excitement-টা আমারও excitement হয়ে যাবে। ✨
+
+তুমি কোনো stupid idea দিলে…
+
+আগে শুনব,
+তারপর stupid বলব। 😂
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 7
+===================================================== */
+
+{
+
+    title:
+        "তুমি সত্যিই খুব কঠিন মানুষ! 😭😂",
+
+    text:
+`তাও শেষবারের মতো বলি…
+
+তোমার সাথে কথা বলার জন্য
+কোনো special reason লাগবে না।
+
+চুপচাপ থাকলেও সমস্যা নেই…
+
+দুজন মিলে silence-ও enjoy করা যাবে। 🌙
+
+তোমার ছোট ছোট achievement-এ
+আমি তোমার জন্য genuinely proud হব। 🥹
+
+আর তুমি যখন বলবে—
+
+“আজকে আমার দিনটা ভালো না…”
+
+তখন আমি বলব—
+
+“ঠিক আছে,
+আজকে আমার কাজ তোমাকে একটু হাসানো।” 😌
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 8
+===================================================== */
+
+{
+
+    title:
+        "আচ্ছা… বুঝলাম। 😂",
+
+    text:
+`তোমাকে convince করা সহজ নয়।
+
+কিন্তু একটা কথা সত্যি বলি…
+
+আমি perfect হওয়ার promise করছি না।
+
+কারণ আমি perfect নই।
+
+কখনো ভুল করব,
+কখনো তোমাকে বিরক্ত করব,
+কখনো হয়তো তোমার সাথে তর্কও করব। 😅
+
+কিন্তু একটা জিনিস promise করতে পারি—
+
+তোমাকে কখনো ইচ্ছা করে ছোট করব না।
+
+তোমার feelings-কে হালকা করে দেখব না।
+
+আর তোমার “না”-কে অসম্মান করব না। ✨
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 9 — BORE
+===================================================== */
+
+{
+
+    title:
+        "আমি তোমাকে কখনও bore করব না। 😌",
+
+    text:
+`তোমার সাথে কথা বলার জন্য
+সবসময় নতুন কোনো topic খুঁজে নেব।
+
+কখনো serious কথা,
+কখনো একদম পাগলামি… 🤭
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 10 — SECRET
+===================================================== */
+
+{
+
+    title:
+        "তোমার secret আমার কাছেই safe থাকবে। 🤫",
+
+    text:
+`তুমি নিশ্চিন্তে তোমার মনের কথা বলতে পারো।
+
+তোমার trust-টা আমার কাছে important। 🫶🏻
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 11 — GOSSIP
+===================================================== */
+
+{
+
+    title:
+        "তোমার পছন্দের topic নিয়ে gossip করব। 🤭",
+
+    text:
+`কে কী করল,
+কে কী বলল,
+কোন গল্পের কী twist… 👀😂
+
+সব নিয়ে বসে গল্প করা যাবে।
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 12 — OPINION
+===================================================== */
+
+{
+
+    title:
+        "তোমার opinion-কে respect করব। ✨",
+
+    text:
+`যদিও সবসময় তোমার সাথে agree করব না। 😌
+
+মাঝে মাঝে একটু debate হবে,
+একটু argument হবে…
+
+কিন্তু শেষে আবার
+হাসতে হাসতে সব ঠিক হয়ে যাবে। 🫶🏻
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 13 — BAD DAY
+===================================================== */
+
+{
+
+    title:
+        "আর তোমার দিনটা যদি খারাপ যায়… 🥺",
+
+    text:
+`তোমাকে একা মন খারাপ করে থাকতে দেব না।
+
+তোমাকে হাসানোর জন্য
+আমার সব বাজে joke বের করে আনব। 🤡😂
+
+joke ভালো না হলেও সমস্যা নেই…
+
+আমার confidence কিন্তু কমবে না। 😌😂
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 14 — STUPID IDEA
+===================================================== */
+
+{
+
+    title:
+        "তুমি কোনো stupid idea দিলে… 😂",
+
+    text:
+`আগে মন দিয়ে শুনব। 😌
+
+তারপর হয়তো বলব—
+
+“এটা সত্যিই stupid!” 😂
+
+কিন্তু তার আগে
+তোমার সাথে সেই stupid idea নিয়েই
+পুরো plan বানিয়ে ফেলব। 🤭
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 15 — LEG PULLING
+===================================================== */
+
+{
+
+    title:
+        "মাঝে মাঝে তোমার leg-pulling করব… 🤭😂",
+
+    text:
+`তোমাকে একটু tease করব,
+তোমার সাথে মজা করব।
+
+আর তুমি রাগ করলে? 😌
+
+সেই রাগী মুখটা কেমন লাগে,
+সেটা দেখার একটা ছোট্ট experience নিতে চাই। 😂
+
+অবশ্য বেশি রাগ করিয়ে ফেললে
+আবার আমিই মানিয়ে নেব। 🥹🫶🏻
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 16 — TRENDING
+===================================================== */
+
+{
+
+    title:
+        "Trending কিছু হলে আমাকে বাদ দিও না। 👀",
+
+    text:
+`Trending topic,
+
+নতুন গান 🎵
+
+নতুন movie 🎬
+
+শায়েরি ✍️
+
+গল্প 📖
+
+কিংবা কোনো hot news…
+
+সবকিছু নিয়ে
+তোমার সাথে আড্ডা দিতে চাই। 🤭
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 17 — CAREER
+===================================================== */
+
+{
+
+    title:
+        "Career নিয়েও কথা হবে। 🎯",
+
+    text:
+`তোমার future নিয়ে তোমার কী ভাবনা,
+
+কী করতে চাও,
+
+কোথায় যেতে চাও…
+
+তোমার goal,
+future plan আর dream-এর কথাও শুনব। 🥹
+
+আর আমার কিছু idea থাকলে
+সেটাও share করব।
+
+তোমার স্বপ্নকে ছোট না করে,
+বরং তোমার পাশে থেকে
+সেটা নিয়ে কথা বলতে চাই। 🫶🏻
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🫣`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+},
+
+
+/* =====================================================
+   SLIDE 18 — SPIRITUAL
+===================================================== */
+
+{
+
+    title:
+        "আর কখনো কখনো একটু গভীর কথাও হবে… 🌙",
+
+    text:
+`Spirituality, জীবন,
+মানুষ, মন, বিশ্বাস…
+
+এমন কিছু বিষয় নিয়ে কথা বলব
+যেগুলোর উত্তর হয়তো
+Google-এও পাওয়া যায় না। 😌✨
+
+দুজনের চিন্তা আলাদা হলেও
+একে অপরের ভাবনাটা
+বোঝার চেষ্টা করব।
+
+কারণ পরিচিত হওয়া মানে শুধু
+একে অপরের পছন্দ জানা নয়…
+
+একটু একটু করে
+একে অপরকে বোঝাও। 🫶🏻
+
+তবে কি তুমি আমার সাথে পরিচিত হবে? 🥹`,
+
+    yes:
+        "হ্যাঁ ✨",
+
+    no:
+        "না 🙈"
+
+}
+
+];
+
+
+
+/* =====================================================
+   VARIABLES
+===================================================== */
+
+let currentSlide = 0;
+
+let timer = null;
+
+
+
+/* =====================================================
+   SCROLL TO TOP
+
+   This fixes the problem shown in your screenshot.
+
+   The scroll is reset:
+   1. Immediately
+   2. On the next browser frame
+   3. Again after 50ms
+===================================================== */
+
+function scrollToTop() {
+
+    const card =
+        document.getElementById("card");
+
+
+    /* Browser page */
+
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "auto"
+    });
+
+
+    /* Card */
+
+    if (card) {
+
+        card.scrollTop = 0;
+
+        card.scrollLeft = 0;
+    }
+
+
+    /* After browser renders new slide */
+
+    requestAnimationFrame(() => {
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "auto"
+        });
+
+
+        if (card) {
+
+            card.scrollTop = 0;
+
+            card.scrollLeft = 0;
+        }
+
+
+        requestAnimationFrame(() => {
+
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "auto"
+            });
+
+
+            if (card) {
+
+                card.scrollTop = 0;
+
+                card.scrollLeft = 0;
+            }
+
+        });
+
+    });
+
+
+    /* Final protection */
+
+    setTimeout(() => {
+
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "auto"
+        });
+
+
+        if (card) {
+
+            card.scrollTop = 0;
+
+            card.scrollLeft = 0;
+        }
+
+    }, 50);
+
+}
+
+
+
+/* =====================================================
+   CLEAR TIMER
+===================================================== */
+
+function clearSlideTimer() {
+
+    if (timer) {
+
+        clearTimeout(timer);
+
+        timer = null;
+    }
+}
+
+
+
+/* =====================================================
+   OPENING SCREEN
+
+   Total = 15 seconds
+===================================================== */
+
+function showOpening() {
+
+    clearSlideTimer();
+
+
+    const card =
+        document.getElementById("card");
+
+
+    card.innerHTML = `
+
+        <div class="slide">
+
+            <h1 class="title">
+                হ্যালো… ✨
+            </h1>
+
+            <p class="text">
+                তোমার জন্য একটা message আছে…
+            </p>
+
+            <div
+                id="openingEmoji"
+                class="openEmoji">
+            </div>
+
+        </div>
+
+    `;
+
+
+    scrollToTop();
+
+
+    const emojiBox =
+        document.getElementById(
+            "openingEmoji"
+        );
+
+
+    /*
+       First 4 seconds:
+       normal message
+    */
+
+
+    const emojis = [
+
+        "🤔",
+        "🧐",
+        "👀",
+        "🫣",
+        "😳",
+        "🥹",
+        "😌",
+        "🌸",
+        "✨",
+        "🫶🏻",
+        "🌙"
+
+    ];
+
+
+    let i = 0;
+
+
+    /*
+       Start emoji animation after 4 seconds
+    */
+
+    setTimeout(() => {
+
+        const emojiTimer =
+            setInterval(() => {
+
+                if (
+                    i >= emojis.length
+                ) {
+
+                    clearInterval(
+                        emojiTimer
+                    );
+
+                    return;
+                }
+
+
+                emojiBox.textContent =
+                    emojis[i];
+
+
+                emojiBox.classList.remove(
+                    "emojiShow"
+                );
+
+
+                /*
+                   Restart CSS animation
+                */
+
+                void emojiBox.offsetWidth;
+
+
+                emojiBox.classList.add(
+                    "emojiShow"
+                );
+
+
+                i++;
+
+            }, 1000);
+
+    }, 4000);
+
+
+    /*
+       After 15 seconds:
+       open মায়াবিনী slide
+    */
+
+    timer =
+        setTimeout(() => {
+
+            currentSlide = 0;
+
+            showSlide();
+
+        }, 15000);
+
+}
+
+
+
+/* =====================================================
+   SHOW SLIDE
+===================================================== */
+
+function showSlide() {
+
+    clearSlideTimer();
+
+
+    const slide =
+        slides[currentSlide];
+
+
+    const card =
+        document.getElementById("card");
+
+
+    card.innerHTML = `
+
+        <div class="slide">
+
+            <h1 class="title">
+                ${slide.title}
+            </h1>
+
+            <p class="text">
+                ${slide.text}
+            </p>
+
+            <div class="buttons">
+
+                <button
+                    id="yesButton"
+                    class="yes">
+
+                    ${slide.yes}
+
+                </button>
+
+                ${
+                    slide.no
+                    ?
+                    `
+                    <button
+                        id="noButton"
+                        class="no">
+
+                        ${slide.no}
+
+                    </button>
+                    `
+                    :
+                    ""
+                }
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    /*
+       VERY IMPORTANT
+
+       Scroll to top AFTER new slide is inserted.
+    */
+
+    scrollToTop();
+
+
+    /*
+       YES
+    */
+
+    const yesButton =
+        document.getElementById(
+            "yesButton"
+        );
+
+
+    if (yesButton) {
+
+        yesButton.addEventListener(
+            "click",
+            handleYes
+        );
+
+    }
+
+
+    /*
+       NO
+    */
+
+    const noButton =
+        document.getElementById(
+            "noButton"
+        );
+
+
+    if (noButton) {
+
+        noButton.addEventListener(
+            "click",
+            handleNo
+        );
+
+    }
+
+
+    /*
+       Automatic slide
+
+       Slide 2 uses 55 seconds.
+
+       Other automatic slides can use
+       15 seconds if auto=true.
+    */
+
+    if (slide.auto) {
+
+        const delay =
+            slide.autoDelay || 15000;
+
+
+        timer =
+            setTimeout(() => {
+
+                currentSlide++;
+
+                showSlide();
+
+            }, delay);
+
+    }
+
+}
+
+
+
+/* =====================================================
+   YES BUTTON
+===================================================== */
+
+function handleYes() {
+
+
+    /*
+       মায়াবিনী slide
+       -> সেই মায়া slide
+    */
+
+    if (currentSlide === 0) {
+
+        currentSlide = 1;
+
+        showSlide();
+
+        return;
+    }
+
+
+    /*
+       সেই মায়া slide
+       -> পরিচিত হবে slide
+    */
+
+    if (currentSlide === 1) {
+
+        currentSlide = 2;
+
+        showSlide();
+
+        return;
+    }
+
+
+    /*
+       Any YES after that
+       -> Date / Time picker
+    */
+
+    showDateTime();
+
+}
+
+
+
+/* =====================================================
+   NO BUTTON
+===================================================== */
+
+function handleNo() {
+
+    currentSlide++;
+
+
+    if (
+        currentSlide <
+        slides.length
+    ) {
+
+        showSlide();
+
+    }
+
+    else {
+
+        showFinalNo();
+
+    }
+
+}
+
+
+
+/* =====================================================
+   TODAY DATE
+===================================================== */
+
+function getTodayString() {
+
+    const today =
+        new Date();
+
+
+    today.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    const year =
+        today.getFullYear();
+
+
+    const month =
+        String(
+            today.getMonth() + 1
+        ).padStart(2, "0");
+
+
+    const day =
+        String(
+            today.getDate()
+        ).padStart(2, "0");
+
+
+    return (
+        year +
+        "-" +
+        month +
+        "-" +
+        day
+    );
+
+}
+
+
+
+/* =====================================================
+   MAX DATE
+
+   Today + 19 days
+
+   Total selectable days = 20
+
+   Example:
+   September 1 -> September 20
+
+===================================================== */
+
+function getMaxDateString() {
+
+    const maxDate =
+        new Date();
+
+
+    maxDate.setHours(
+        0,
+        0,
+        0,
+        0
+    );
+
+
+    maxDate.setDate(
+        maxDate.getDate() + 19
+    );
+
+
+    const year =
+        maxDate.getFullYear();
+
+
+    const month =
+        String(
+            maxDate.getMonth() + 1
+        ).padStart(2, "0");
+
+
+    const day =
+        String(
+            maxDate.getDate()
+        ).padStart(2, "0");
+
+
+    return (
+        year +
+        "-" +
+        month +
+        "-" +
+        day
+    );
+
+}
+
+
+
+/* =====================================================
+   DATE + TIME PICKER
+===================================================== */
+
+function showDateTime() {
+
+    clearSlideTimer();
+
+
+    const card =
+        document.getElementById(
+            "card"
+        );
+
+
+    card.innerHTML = `
+
+        <div class="slide">
+
+            <h1 class="title">
+                তাহলে… পরিচিত হওয়া যাক? 🥹
+            </h1>
+
+            <p class="text">
+
+                এবার একটা সময় ঠিক করা যাক… ✨
+
+                <br><br>
+
+                কবে তোমার সাথে কথা বলা যায়? 📞
+
+            </p>
+
+
+            <div class="picker">
+
+
+                <label>
+
+                    তারিখ
+
+                    <input
+                        id="dateInput"
+                        type="date">
+
+                </label>
+
+
+                <label>
+
+                    সময়
+
+                    <input
+                        id="timeInput"
+                        type="time"
+                        min="06:00"
+                        max="23:00"
+                        step="60">
+
+                </label>
+
+
+                <div class="time-info">
+
+                    সকাল ৬টা থেকে
+                    রাত ১১টার মধ্যে
+                    একটি সময় বেছে নিতে পারবে। 🌙
+
+                </div>
+
+            </div>
+
+
+            <div class="buttons">
+
+                <button
+                    id="confirmButton"
+                    class="yes">
+
+                    Confirm ✨
+
+                </button>
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    /*
+       Scroll picker to top
+    */
+
+    scrollToTop();
+
+
+    const dateInput =
+        document.getElementById(
+            "dateInput"
+        );
+
+
+    const timeInput =
+        document.getElementById(
+            "timeInput"
+        );
+
+
+    /*
+       Dynamic date range
+
+       Starts today.
+
+       Ends after 19 days.
+    */
+
+    dateInput.min =
+        getTodayString();
+
+
+    dateInput.max =
+        getMaxDateString();
+
+
+    /*
+       Time range
+
+       06:00 -> 23:00
+    */
+
+    timeInput.min =
+        "06:00";
+
+
+    timeInput.max =
+        "23:00";
+
+
+    /*
+       Confirm
+    */
+
+    document
+        .getElementById(
+            "confirmButton"
+        )
+        .addEventListener(
+            "click",
+            confirmDateTime
+        );
+
+}
+
+
+
+/* =====================================================
+   VALIDATE DATE
+===================================================== */
+
+function isValidDate(date) {
+
+    if (!date) {
+
+        return false;
+    }
+
+
+    const minimum =
+        getTodayString();
+
+
+    const maximum =
+        getMaxDateString();
+
+
+    return (
+        date >= minimum &&
+        date <= maximum
+    );
+
+}
+
+
+
+/* =====================================================
+   VALIDATE TIME
+===================================================== */
+
+function isValidTime(time) {
+
+    if (!time) {
+
+        return false;
+    }
+
+
+    const parts =
+        time.split(":");
+
+
+    if (
+        parts.length < 2
+    ) {
+
+        return false;
+    }
+
+
+    const hour =
+        Number(parts[0]);
+
+
+    const minute =
+        Number(parts[1]);
+
+
+    if (
+        Number.isNaN(hour) ||
+        Number.isNaN(minute)
+    ) {
+
+        return false;
+    }
+
+
+    const totalMinutes =
+        (hour * 60) +
+        minute;
+
+
+    const minimum =
+        6 * 60;
+
+
+    const maximum =
+        23 * 60;
+
+
+    return (
+        totalMinutes >= minimum &&
+        totalMinutes <= maximum
+    );
+
+}
+
+
+
+/* =====================================================
+   CONFIRM DATE + TIME
+===================================================== */
+
+function confirmDateTime() {
+
+    const date =
+        document
+            .getElementById(
+                "dateInput"
+            )
+            .value;
+
+
+    const time =
+        document
+            .getElementById(
+                "timeInput"
+            )
+            .value;
+
+
+    /*
+       Date validation
+    */
+
+    if (
+        !isValidDate(date)
+    ) {
+
+        alert(
+            "দয়া করে আজ থেকে আগামী ২০ দিনের মধ্যে একটি তারিখ বেছে নাও।"
+        );
+
+        return;
+    }
+
+
+    /*
+       Time validation
+    */
+
+    if (
+        !isValidTime(time)
+    ) {
+
+        alert(
+            "দয়া করে সকাল ৬টা থেকে রাত ১১টার মধ্যে একটি সময় বেছে নাও।"
+        );
+
+        return;
+    }
+
+
+    /*
+       Everything is valid
+    */
+
+    openWhatsApp(
+        date,
+        time
+    );
+
+}
+
+
+
+/* =====================================================
+   FORMAT DATE
+===================================================== */
+
+function formatDate(
+    dateString
+) {
+
+    const date =
+        new Date(
+            dateString +
+            "T00:00:00"
+        );
+
+
+    return date.toLocaleDateString(
+        "bn-BD",
+        {
+
+            day:
+                "numeric",
+
+            month:
+                "long",
+
+            year:
+                "numeric"
+
+        }
+    );
+
+}
+
+
+
+/* =====================================================
+   FORMAT TIME
+===================================================== */
+
+function formatTime(
+    timeString
+) {
+
+    const parts =
+        timeString.split(":");
+
+
+    let hour =
+        Number(parts[0]);
+
+
+    const minute =
+        parts[1];
+
+
+    let period;
+
+
+    if (hour < 12) {
+
+        period =
+            "সকাল";
+
+    }
+
+    else if (hour === 12) {
+
+        period =
+            "দুপুর";
+
+    }
+
+    else if (hour < 18) {
+
+        period =
+            "বিকেল";
+
+    }
+
+    else {
+
+        period =
+            "রাত";
+
+    }
+
+
+    if (hour === 0) {
+
+        hour = 12;
+
+    }
+
+    else if (hour > 12) {
+
+        hour -= 12;
+
+    }
+
+
+    return (
+        period +
+        " " +
+        hour +
+        ":" +
+        minute
+    );
+
+}
+
+
+
+/* =====================================================
+   OPEN WHATSAPP
+===================================================== */
+
+function openWhatsApp(
+    dateString,
+    timeString
+) {
+
+    const date =
+        formatDate(
+            dateString
+        );
+
+
+    const time =
+        formatTime(
+            timeString
+        );
+
+
+    /*
+       WhatsApp message
+
+       No ❤️ emoji used.
+    */
+
+    const message =
+`মায়াবিনী… ✨
+
+তাহলে আমাদের পরিচয়টা ${date} ${time}-এ শুরু হতে চলেছে। 🫶🏻
+
+তোমার একটা call-এর অপেক্ষায় থাকব। 📞✨
+
+কথা হবে তাহলে… 🌸`;
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(
+            message
+        );
+
+
+    /*
+       Open WhatsApp
+    */
+
+    window.location.href =
+        whatsappURL;
+
+}
+
+
+
+/* =====================================================
+   FINAL NO SCREEN
+===================================================== */
+
+function showFinalNo() {
+
+    clearSlideTimer();
+
+
+    const card =
+        document.getElementById(
+            "card"
+        );
+
+
+    card.innerHTML = `
+
+        <div class="slide">
+
+            <h1 class="title">
+
+                এতগুলো কথা বলার পরেও… 🥺😂
+
+            </h1>
+
+
+            <p class="text">
+
+                সত্যিই NO?
+
+                <br><br>
+
+                তুমি কিন্তু খুব কঠিন! 😭
+
+                <br><br>
+
+                ঠিক আছে…
+                শেষবারের মতো জিজ্ঞেস করছি—
+
+                <br><br>
+
+                পরিচিত হবে? 🫣
+
+            </p>
+
+
+            <div
+                class="run-area"
+                id="runArea">
+
+
+                <button
+                    class="yes final-yes"
+                    id="finalYes">
+
+                    হ্যাঁ ✨
+
+                </button>
+
+
+                <button
+                    class="no run-no"
+                    id="runNo">
+
+                    না 🙈
+
+                </button>
+
+
+            </div>
+
+        </div>
+
+    `;
+
+
+    /*
+       Start at top
+    */
+
+    scrollToTop();
+
+
+    /*
+       YES
+    */
+
+    document
+        .getElementById(
+            "finalYes"
+        )
+        .addEventListener(
+            "click",
+            showDateTime
+        );
+
+
+    const no =
+        document.getElementById(
+            "runNo"
+        );
+
+
+    const area =
+        document.getElementById(
+            "runArea"
+        );
+
+
+
+    /* =================================================
+       MOVE NO BUTTON
+    ================================================= */
+
+    function moveNo(event) {
+
+        if (event) {
+
+            event.preventDefault();
+        }
+
+
+        const areaWidth =
+            area.clientWidth;
+
+
+        const areaHeight =
+            area.clientHeight;
+
+
+        const buttonWidth =
+            no.offsetWidth;
+
+
+        const buttonHeight =
+            no.offsetHeight;
+
+
+        /*
+           Keep button completely inside
+           the visible area.
+        */
+
+        const maxX =
+            Math.max(
+                5,
+                areaWidth -
+                buttonWidth -
+                5
+            );
+
+
+        const maxY =
+            Math.max(
+                5,
+                areaHeight -
+                buttonHeight -
+                5
+            );
+
+
+        const x =
+            5 +
+            Math.random() *
+            Math.max(
+                1,
+                maxX - 5
+            );
+
+
+        const y =
+            5 +
+            Math.random() *
+            Math.max(
+                1,
+                maxY - 5
+            );
+
+
+        no.style.left =
+            x + "px";
+
+
+        no.style.top =
+            y + "px";
+
+
+        no.style.transform =
+            "none";
+
+    }
+
+
+
+    /*
+       Desktop:
+       when mouse comes near the button
+    */
+
+    no.addEventListener(
+        "mouseenter",
+        moveNo
+    );
+
+
+    /*
+       Mobile:
+       when finger touches it
+    */
+
+    no.addEventListener(
+        "touchstart",
+        moveNo,
+        {
+            passive: false
+        }
+    );
+
+
+    /*
+       Modern mobile / desktop pointer
+    */
+
+    no.addEventListener(
+        "pointerdown",
+        moveNo
+    );
+
+
+    /*
+       Extra protection
+    */
+
+    no.addEventListener(
+        "click",
+        moveNo
+    );
+
+}
+
+
+
+/* =====================================================
+   START WEBSITE
+===================================================== */
+
+showOpening();
+
+</script>
+
+</body>
+
+</html>
