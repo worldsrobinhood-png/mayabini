@@ -2,7 +2,6 @@
 <html lang="bn">
 
 <head>
-
 <meta charset="UTF-8">
 
 <meta name="viewport"
@@ -10,21 +9,11 @@
 
 <title>মায়াবিনী ✨</title>
 
-
-<!-- =====================================================
-     BENGALI FONTS
-===================================================== -->
-
-<link rel="preconnect"
-      href="https://fonts.googleapis.com">
-
-<link rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap"
       rel="stylesheet">
-
 
 <style>
 
@@ -40,30 +29,16 @@ html,
 body {
     margin: 0;
     padding: 0;
-
     width: 100%;
     min-height: 100%;
-
-    scroll-behavior: auto;
 }
 
-
-/* =====================================================
-   BODY
-===================================================== */
-
 body {
-
-    font-family:
-        "Hind Siliguri",
-        sans-serif;
-
+    font-family: "Hind Siliguri", sans-serif;
     color: #554653;
-
     overflow-x: hidden;
 
     background:
-
         radial-gradient(
             circle at 15% 15%,
             #ffe6f1,
@@ -85,32 +60,22 @@ body {
 
 
 /* =====================================================
-   BACKGROUND DECORATION
+   BACKGROUND
 ===================================================== */
 
 .bg {
-
     position: fixed;
-
     inset: 0;
-
     pointer-events: none;
-
     overflow: hidden;
-
     z-index: 0;
 }
 
 .bg span {
-
     position: absolute;
-
     font-size: 25px;
-
     opacity: .25;
-
-    animation:
-        float 7s ease-in-out infinite;
+    animation: float 7s ease-in-out infinite;
 }
 
 .bg span:nth-child(1) {
@@ -121,24 +86,20 @@ body {
 .bg span:nth-child(2) {
     right: 10%;
     top: 20%;
-
     animation-delay: 1.5s;
 }
 
 .bg span:nth-child(3) {
     left: 12%;
     bottom: 15%;
-
     animation-delay: 3s;
 }
 
 .bg span:nth-child(4) {
     right: 15%;
     bottom: 12%;
-
     animation-delay: 4s;
 }
-
 
 @keyframes float {
 
@@ -155,19 +116,14 @@ body {
 ===================================================== */
 
 .page {
-
     position: relative;
-
     z-index: 1;
 
     width: 100%;
-
     min-height: 100vh;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     padding: 15px;
@@ -175,24 +131,16 @@ body {
 
 
 /* =====================================================
-   MAIN CARD
-
-   IMPORTANT:
-   display:block is used so the browser does not
-   vertically center the content and clip the title.
+   CARD
 ===================================================== */
 
 .card {
-
     width: min(720px, 100%);
 
     min-height: 680px;
+    max-height: calc(100vh - 30px);
 
-    max-height:
-        calc(100vh - 30px);
-
-    padding:
-        40px 35px;
+    padding: 40px 35px;
 
     border-radius: 28px;
 
@@ -207,21 +155,18 @@ body {
         0 25px 70px
         rgba(80,55,80,.15);
 
-    backdrop-filter:
-        blur(15px);
+    backdrop-filter: blur(15px);
 
     display: block;
 
     overflow-y: auto;
-
     overflow-x: hidden;
 
     scroll-behavior: auto;
 
     position: relative;
 
-    -webkit-overflow-scrolling:
-        touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -230,7 +175,6 @@ body {
 ===================================================== */
 
 .slide {
-
     width: 100%;
 
     min-height: auto;
@@ -238,7 +182,6 @@ body {
     text-align: center;
 
     padding-top: 20px;
-
     padding-bottom: 30px;
 
     animation:
@@ -247,34 +190,25 @@ body {
     flex-shrink: 0;
 }
 
-
 @keyframes appear {
 
     from {
         opacity: 0;
-
-        transform:
-            translateY(15px);
+        transform: translateY(15px);
     }
 
     to {
         opacity: 1;
-
-        transform:
-            translateY(0);
+        transform: translateY(0);
     }
 }
 
 
 /* =====================================================
    TITLE
-
-   Kept at similar size instead of making the title
-   excessively large.
 ===================================================== */
 
 .title {
-
     font-family:
         "Atma",
         "Hind Siliguri",
@@ -301,7 +235,6 @@ body {
 ===================================================== */
 
 .text {
-
     font-family:
         "Hind Siliguri",
         sans-serif;
@@ -324,13 +257,11 @@ body {
 ===================================================== */
 
 .buttons {
-
     margin-top: 30px;
 
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     gap: 15px;
@@ -338,9 +269,7 @@ body {
     flex-wrap: wrap;
 }
 
-
 button {
-
     border: 0;
 
     border-radius: 50px;
@@ -349,7 +278,6 @@ button {
         13px 24px;
 
     min-height: 50px;
-
     min-width: 125px;
 
     font-family:
@@ -357,36 +285,31 @@ button {
         sans-serif;
 
     font-size: 17px;
-
     font-weight: 600;
 
     cursor: pointer;
 
     touch-action: manipulation;
 
-    -webkit-tap-highlight-color:
-        transparent;
+    -webkit-tap-highlight-color: transparent;
 
     transition:
         transform .2s ease;
 }
 
-
 button:active {
-
-    transform:
-        scale(.95);
+    transform: scale(.95);
 }
 
 
-/* YES */
+/* =====================================================
+   YES BUTTON
+===================================================== */
 
 .yes {
-
     color: white;
 
     background:
-
         linear-gradient(
             135deg,
             #a86791,
@@ -394,18 +317,17 @@ button:active {
         );
 
     box-shadow:
-
         0 10px 25px
         rgba(120,80,150,.25);
 }
 
 
-/* NO */
+/* =====================================================
+   NO BUTTON
+===================================================== */
 
 .no {
-
     color: #635361;
-
     background: #eee6ed;
 }
 
@@ -415,13 +337,11 @@ button:active {
 ===================================================== */
 
 .openEmoji {
-
     height: 130px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     font-size: 68px;
@@ -429,126 +349,65 @@ button:active {
     margin-top: 15px;
 }
 
-
 .emojiShow {
-
     animation:
         emoji .65s ease;
 }
 
-
 @keyframes emoji {
 
     from {
-
         opacity: 0;
-
-        transform:
-            scale(.5);
+        transform: scale(.5);
     }
 
     to {
-
         opacity: 1;
-
-        transform:
-            scale(1);
+        transform: scale(1);
     }
 }
 
 
 /* =====================================================
-   DATE / TIME PICKER
+   WHATSAPP CHAT BUTTON AREA
 ===================================================== */
 
-.picker {
-
-    width:
-        min(420px, 100%);
-
-    margin:
-        30px auto 0;
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 18px;
-}
-
-
-.picker label {
-
-    text-align: left;
-
-    font-size: 17px;
-
-    font-weight: 600;
-}
-
-
-.picker input {
-
-    display: block;
-
+.chat-box {
     width: 100%;
+    max-width: 520px;
 
-    margin-top: 7px;
+    margin: 30px auto 0;
 
-    padding: 13px;
+    padding: 25px 20px;
 
-    border-radius: 14px;
+    border-radius: 22px;
+
+    background:
+        rgba(255,255,255,.65);
 
     border:
         1px solid
-        #ded1dc;
-
-    background: #fff;
-
-    font-family:
-        "Hind Siliguri",
-        sans-serif;
-
-    font-size: 17px;
-
-    outline: none;
+        rgba(170,140,170,.15);
 }
 
-
-.picker input:focus {
-
-    border-color: #9c7aaa;
-
-    box-shadow:
-        0 0 0 4px
-        rgba(156,122,170,.12);
+.chat-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
 }
 
-
-/* =====================================================
-   TIME INFO
-===================================================== */
-
-.time-info {
-
+.chat-button {
     margin-top: 10px;
-
-    font-size: 15px;
-
-    opacity: .75;
 }
 
 
 /* =====================================================
-   FINAL RUN AREA
+   FINAL RUNNING NO AREA
 ===================================================== */
 
 .run-area {
-
     position: relative;
 
     width: 100%;
-
     max-width: 500px;
 
     height: 250px;
@@ -562,14 +421,12 @@ button:active {
 }
 
 
-/* YES stays normal */
+/* YES stays normally */
 
 .final-yes {
-
     position: absolute;
 
     left: 50%;
-
     top: 30%;
 
     transform:
@@ -577,14 +434,12 @@ button:active {
 }
 
 
-/* NO runs */
+/* NO runs away */
 
 .run-no {
-
     position: absolute;
 
     left: 50%;
-
     top: 70%;
 
     transform:
@@ -603,7 +458,6 @@ button:active {
 @media (max-width: 600px) {
 
     .page {
-
         min-height: 100vh;
 
         padding: 8px;
@@ -611,9 +465,7 @@ button:active {
         align-items: flex-start;
     }
 
-
     .card {
-
         width: 100%;
 
         min-height:
@@ -630,57 +482,41 @@ button:active {
         display: block;
 
         overflow-y: auto;
-
         overflow-x: hidden;
 
         scroll-behavior: auto;
     }
 
-
     .slide {
-
         width: 100%;
 
         min-height: auto;
 
         padding-top: 20px;
-
         padding-bottom: 30px;
     }
 
-
     .title {
-
         font-size: 29px;
 
         line-height: 1.4;
 
         margin-top: 0;
-
         margin-bottom: 20px;
     }
 
-
     .text {
-
         font-size: 17px;
-
         line-height: 1.85;
     }
 
-
     .buttons {
-
         margin-top: 25px;
-
         gap: 10px;
     }
 
-
     button {
-
         min-height: 52px;
-
         min-width: 120px;
 
         padding:
@@ -689,12 +525,13 @@ button:active {
         font-size: 17px;
     }
 
-
     .openEmoji {
-
         font-size: 62px;
-
         height: 120px;
+    }
+
+    .chat-box {
+        padding: 22px 15px;
     }
 }
 
@@ -706,27 +543,19 @@ button:active {
 @media (max-width: 360px) {
 
     .card {
-
         padding-left: 13px;
-
         padding-right: 13px;
     }
 
-
     .title {
-
         font-size: 27px;
     }
 
-
     .text {
-
         font-size: 16px;
     }
 
-
     button {
-
         min-width: 110px;
     }
 }
@@ -746,18 +575,15 @@ button:active {
 <div class="bg">
 
     <span>🌸</span>
-
     <span>✨</span>
-
     <span>🦋</span>
-
     <span>🌙</span>
 
 </div>
 
 
 <!-- =====================================================
-     PAGE
+     MAIN PAGE
 ===================================================== -->
 
 <div class="page">
@@ -765,7 +591,6 @@ button:active {
     <div
         class="card"
         id="card">
-
     </div>
 
 </div>
@@ -776,38 +601,35 @@ button:active {
 
 
 /* =====================================================
-   YOUR WHATSAPP NUMBER
+   WHATSAPP NUMBER
 
-   CHANGE THIS.
+   CHANGE THIS TO YOUR NUMBER.
 
-   Example for India:
+   India example:
 
    919876543210
 
-   Do NOT add:
-   +
+   Do NOT use:
+   +91
    spaces
-   brackets
+   -
 ===================================================== */
 
 const WHATSAPP_NUMBER =
-    "919475026338";
+    "919876543210";
 
 
 
 /* =====================================================
    SLIDES
-
-   Slide 1 here = "মায়াবিনী"
-   It automatically continues after 55 seconds.
-
-   Clicking YES moves immediately.
 ===================================================== */
 
 const slides = [
 
 /* =====================================================
    SLIDE 2 — মায়াবিনী
+
+   55 SECOND AUTO
 ===================================================== */
 
 {
@@ -841,8 +663,6 @@ const slides = [
     auto:
         true,
 
-    /* 55 seconds */
-
     autoDelay:
         55000
 
@@ -850,7 +670,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 3 — সেই মায়া
+   SLIDE 3
 ===================================================== */
 
 {
@@ -890,7 +710,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 4 — পরিচিত হবে?
+   SLIDE 4
 ===================================================== */
 
 {
@@ -1089,7 +909,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 9 — BORE
+   SLIDE 9
 ===================================================== */
 
 {
@@ -1116,7 +936,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 10 — SECRET
+   SLIDE 10
 ===================================================== */
 
 {
@@ -1141,7 +961,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 11 — GOSSIP
+   SLIDE 11
 ===================================================== */
 
 {
@@ -1168,7 +988,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 12 — OPINION
+   SLIDE 12
 ===================================================== */
 
 {
@@ -1197,7 +1017,7 @@ const slides = [
 
 
 /* =====================================================
-   SLIDE 13 — BAD DAY
+   SLIDE 13
 ===================================================== */
 
 {
@@ -1227,7 +1047,7 @@ joke ভালো না হলেও সমস্যা নেই…
 
 
 /* =====================================================
-   SLIDE 14 — STUPID IDEA
+   SLIDE 14
 ===================================================== */
 
 {
@@ -1258,7 +1078,7 @@ joke ভালো না হলেও সমস্যা নেই…
 
 
 /* =====================================================
-   SLIDE 15 — LEG PULLING
+   SLIDE 15
 ===================================================== */
 
 {
@@ -1290,7 +1110,7 @@ joke ভালো না হলেও সমস্যা নেই…
 
 
 /* =====================================================
-   SLIDE 16 — TRENDING
+   SLIDE 16
 ===================================================== */
 
 {
@@ -1326,7 +1146,7 @@ joke ভালো না হলেও সমস্যা নেই…
 
 
 /* =====================================================
-   SLIDE 17 — CAREER
+   SLIDE 17
 ===================================================== */
 
 {
@@ -1363,7 +1183,7 @@ future plan আর dream-এর কথাও শুনব। 🥹
 
 
 /* =====================================================
-   SLIDE 18 — SPIRITUAL
+   SLIDE 18
 ===================================================== */
 
 {
@@ -1416,12 +1236,7 @@ let timer = null;
 /* =====================================================
    SCROLL TO TOP
 
-   This fixes the problem shown in your screenshot.
-
-   The scroll is reset:
-   1. Immediately
-   2. On the next browser frame
-   3. Again after 50ms
+   Fixes the clipped title problem.
 ===================================================== */
 
 function scrollToTop() {
@@ -1430,8 +1245,6 @@ function scrollToTop() {
         document.getElementById("card");
 
 
-    /* Browser page */
-
     window.scrollTo({
         top: 0,
         left: 0,
@@ -1439,17 +1252,13 @@ function scrollToTop() {
     });
 
 
-    /* Card */
-
     if (card) {
 
         card.scrollTop = 0;
-
         card.scrollLeft = 0;
+
     }
 
-
-    /* After browser renders new slide */
 
     requestAnimationFrame(() => {
 
@@ -1463,8 +1272,8 @@ function scrollToTop() {
         if (card) {
 
             card.scrollTop = 0;
-
             card.scrollLeft = 0;
+
         }
 
 
@@ -1480,16 +1289,14 @@ function scrollToTop() {
             if (card) {
 
                 card.scrollTop = 0;
-
                 card.scrollLeft = 0;
+
             }
 
         });
 
     });
 
-
-    /* Final protection */
 
     setTimeout(() => {
 
@@ -1503,8 +1310,8 @@ function scrollToTop() {
         if (card) {
 
             card.scrollTop = 0;
-
             card.scrollLeft = 0;
+
         }
 
     }, 50);
@@ -1524,7 +1331,9 @@ function clearSlideTimer() {
         clearTimeout(timer);
 
         timer = null;
+
     }
+
 }
 
 
@@ -1532,7 +1341,7 @@ function clearSlideTimer() {
 /* =====================================================
    OPENING SCREEN
 
-   Total = 15 seconds
+   15 seconds total
 ===================================================== */
 
 function showOpening() {
@@ -1549,14 +1358,12 @@ function showOpening() {
         <div class="slide">
 
             <h1 class="title">
-                হ্যালো… ✨!!!!
+                হ্যালো… ✨
             </h1>
 
             <p class="text">
-            আমি সমীর… 🌸
-            <br><br>
-            তোমার জন্য একটা message আছে…
-        </p>
+                তোমার জন্য একটা message আছে…
+            </p>
 
             <div
                 id="openingEmoji"
@@ -1575,12 +1382,6 @@ function showOpening() {
         document.getElementById(
             "openingEmoji"
         );
-
-
-    /*
-       First 4 seconds:
-       normal message
-    */
 
 
     const emojis = [
@@ -1604,7 +1405,9 @@ function showOpening() {
 
 
     /*
-       Start emoji animation after 4 seconds
+       First 4 seconds are normal.
+
+       Emoji starts after 4 seconds.
     */
 
     setTimeout(() => {
@@ -1621,6 +1424,7 @@ function showOpening() {
                     );
 
                     return;
+
                 }
 
 
@@ -1632,10 +1436,6 @@ function showOpening() {
                     "emojiShow"
                 );
 
-
-                /*
-                   Restart CSS animation
-                */
 
                 void emojiBox.offsetWidth;
 
@@ -1653,8 +1453,7 @@ function showOpening() {
 
 
     /*
-       After 15 seconds:
-       open মায়াবিনী slide
+       15 seconds -> Slide 2
     */
 
     timer =
@@ -1733,17 +1532,11 @@ function showSlide() {
 
 
     /*
-       VERY IMPORTANT
-
-       Scroll to top AFTER new slide is inserted.
+       Reset scroll AFTER inserting slide.
     */
 
     scrollToTop();
 
-
-    /*
-       YES
-    */
 
     const yesButton =
         document.getElementById(
@@ -1760,10 +1553,6 @@ function showSlide() {
 
     }
 
-
-    /*
-       NO
-    */
 
     const noButton =
         document.getElementById(
@@ -1782,12 +1571,7 @@ function showSlide() {
 
 
     /*
-       Automatic slide
-
-       Slide 2 uses 55 seconds.
-
-       Other automatic slides can use
-       15 seconds if auto=true.
+       Slide 2 = 55 seconds.
     */
 
     if (slide.auto) {
@@ -1813,14 +1597,18 @@ function showSlide() {
 
 /* =====================================================
    YES BUTTON
+
+   ANY YES -> WhatsApp chat
+
+   Exception:
+   Slide 2 YES -> Slide 3
+   Slide 3 YES -> Slide 4
 ===================================================== */
 
 function handleYes() {
 
-
     /*
-       মায়াবিনী slide
-       -> সেই মায়া slide
+       Slide 2
     */
 
     if (currentSlide === 0) {
@@ -1830,12 +1618,12 @@ function handleYes() {
         showSlide();
 
         return;
+
     }
 
 
     /*
-       সেই মায়া slide
-       -> পরিচিত হবে slide
+       Slide 3
     */
 
     if (currentSlide === 1) {
@@ -1845,15 +1633,17 @@ function handleYes() {
         showSlide();
 
         return;
+
     }
 
 
     /*
-       Any YES after that
-       -> Date / Time picker
+       Slide 4 onward:
+
+       YES -> WhatsApp
     */
 
-    showDateTime();
+    showWhatsAppScreen();
 
 }
 
@@ -1888,115 +1678,17 @@ function handleNo() {
 
 
 /* =====================================================
-   TODAY DATE
+   WHATSAPP SCREEN
+
+   NEW SYSTEM:
+   NO DATE
+   NO TIME
+   NO CALL
+
+   JUST CHAT ON WHATSAPP
 ===================================================== */
 
-function getTodayString() {
-
-    const today =
-        new Date();
-
-
-    today.setHours(
-        0,
-        0,
-        0,
-        0
-    );
-
-
-    const year =
-        today.getFullYear();
-
-
-    const month =
-        String(
-            today.getMonth() + 1
-        ).padStart(2, "0");
-
-
-    const day =
-        String(
-            today.getDate()
-        ).padStart(2, "0");
-
-
-    return (
-        year +
-        "-" +
-        month +
-        "-" +
-        day
-    );
-
-}
-
-
-
-/* =====================================================
-   MAX DATE
-
-   Today + 19 days
-
-   Total selectable days = 20
-
-   Example:
-   September 1 -> September 20
-
-===================================================== */
-
-function getMaxDateString() {
-
-    const maxDate =
-        new Date();
-
-
-    maxDate.setHours(
-        0,
-        0,
-        0,
-        0
-    );
-
-
-    maxDate.setDate(
-        maxDate.getDate() + 19
-    );
-
-
-    const year =
-        maxDate.getFullYear();
-
-
-    const month =
-        String(
-            maxDate.getMonth() + 1
-        ).padStart(2, "0");
-
-
-    const day =
-        String(
-            maxDate.getDate()
-        ).padStart(2, "0");
-
-
-    return (
-        year +
-        "-" +
-        month +
-        "-" +
-        day
-    );
-
-}
-
-
-
-/* =====================================================
-   DATE + TIME PICKER
-===================================================== */
-
-function showDateTime() {
+function showWhatsAppScreen() {
 
     clearSlideTimer();
 
@@ -2015,63 +1707,49 @@ function showDateTime() {
                 তাহলে… পরিচিত হওয়া যাক? 🥹
             </h1>
 
+
             <p class="text">
 
-                এবার একটা সময় ঠিক করা যাক… ✨
+                এতক্ষণ তো এখানে
+                অনেক কথা হয়ে গেল… 😌
 
                 <br><br>
 
-                কবে তোমার সাথে কথা বলা যায়? 📞
+                এবার আর এত কিছু নয়।
+
+                <br><br>
+
+                চলো WhatsApp-এ
+                একটু কথা বলা যাক। 💬✨
+
+                <br><br>
+
+                তোমার সাথে সরাসরি
+                পরিচিত হতে চাই। 🫶🏻
 
             </p>
 
 
-            <div class="picker">
+            <div class="chat-box">
 
-
-                <label>
-
-                    তারিখ
-
-                    <input
-                        id="dateInput"
-                        type="date">
-
-                </label>
-
-
-                <label>
-
-                    সময়
-
-                    <input
-                        id="timeInput"
-                        type="time"
-                        min="06:00"
-                        max="23:00"
-                        step="60">
-
-                </label>
-
-
-                <div class="time-info">
-
-                    সকাল ৬টা থেকে
-                    রাত ১১টার মধ্যে
-                    একটি সময় বেছে নিতে পারবে। 🌙
-
+                <div class="chat-icon">
+                    💬
                 </div>
 
-            </div>
+                <p class="text">
 
+                    এখান থেকে
+                    সরাসরি WhatsApp-এ
+                    চলে যাও।
 
-            <div class="buttons">
+                </p>
+
 
                 <button
-                    id="confirmButton"
-                    class="yes">
+                    id="chatButton"
+                    class="yes chat-button">
 
-                    Confirm ✨
+                    💬 এখানে chat করি
 
                 </button>
 
@@ -2082,66 +1760,16 @@ function showDateTime() {
     `;
 
 
-    /*
-       Scroll picker to top
-    */
-
     scrollToTop();
 
 
-    const dateInput =
-        document.getElementById(
-            "dateInput"
-        );
-
-
-    const timeInput =
-        document.getElementById(
-            "timeInput"
-        );
-
-
-    /*
-       Dynamic date range
-
-       Starts today.
-
-       Ends after 19 days.
-    */
-
-    dateInput.min =
-        getTodayString();
-
-
-    dateInput.max =
-        getMaxDateString();
-
-
-    /*
-       Time range
-
-       06:00 -> 23:00
-    */
-
-    timeInput.min =
-        "06:00";
-
-
-    timeInput.max =
-        "23:00";
-
-
-    /*
-       Confirm
-    */
-
     document
         .getElementById(
-            "confirmButton"
+            "chatButton"
         )
         .addEventListener(
             "click",
-            confirmDateTime
+            openWhatsApp
         );
 
 }
@@ -2149,311 +1777,28 @@ function showDateTime() {
 
 
 /* =====================================================
-   VALIDATE DATE
+   WHATSAPP
+
+   Replace the number above.
+
+   Message is automatically inserted.
 ===================================================== */
 
-function isValidDate(date) {
-
-    if (!date) {
-
-        return false;
-    }
-
-
-    const minimum =
-        getTodayString();
-
-
-    const maximum =
-        getMaxDateString();
-
-
-    return (
-        date >= minimum &&
-        date <= maximum
-    );
-
-}
-
-
-
-/* =====================================================
-   VALIDATE TIME
-===================================================== */
-
-function isValidTime(time) {
-
-    if (!time) {
-
-        return false;
-    }
-
-
-    const parts =
-        time.split(":");
-
-
-    if (
-        parts.length < 2
-    ) {
-
-        return false;
-    }
-
-
-    const hour =
-        Number(parts[0]);
-
-
-    const minute =
-        Number(parts[1]);
-
-
-    if (
-        Number.isNaN(hour) ||
-        Number.isNaN(minute)
-    ) {
-
-        return false;
-    }
-
-
-    const totalMinutes =
-        (hour * 60) +
-        minute;
-
-
-    const minimum =
-        6 * 60;
-
-
-    const maximum =
-        23 * 60;
-
-
-    return (
-        totalMinutes >= minimum &&
-        totalMinutes <= maximum
-    );
-
-}
-
-
-
-/* =====================================================
-   CONFIRM DATE + TIME
-===================================================== */
-
-function confirmDateTime() {
-
-    const date =
-        document
-            .getElementById(
-                "dateInput"
-            )
-            .value;
-
-
-    const time =
-        document
-            .getElementById(
-                "timeInput"
-            )
-            .value;
-
-
-    /*
-       Date validation
-    */
-
-    if (
-        !isValidDate(date)
-    ) {
-
-        alert(
-            "দয়া করে আজ থেকে আগামী ২০ দিনের মধ্যে একটি তারিখ বেছে নাও।"
-        );
-
-        return;
-    }
-
-
-    /*
-       Time validation
-    */
-
-    if (
-        !isValidTime(time)
-    ) {
-
-        alert(
-            "দয়া করে সকাল ৬টা থেকে রাত ১১টার মধ্যে একটি সময় বেছে নাও।"
-        );
-
-        return;
-    }
-
-
-    /*
-       Everything is valid
-    */
-
-    openWhatsApp(
-        date,
-        time
-    );
-
-}
-
-
-
-/* =====================================================
-   FORMAT DATE
-===================================================== */
-
-function formatDate(
-    dateString
-) {
-
-    const date =
-        new Date(
-            dateString +
-            "T00:00:00"
-        );
-
-
-    return date.toLocaleDateString(
-        "bn-BD",
-        {
-
-            day:
-                "numeric",
-
-            month:
-                "long",
-
-            year:
-                "numeric"
-
-        }
-    );
-
-}
-
-
-
-/* =====================================================
-   FORMAT TIME
-===================================================== */
-
-function formatTime(
-    timeString
-) {
-
-    const parts =
-        timeString.split(":");
-
-
-    let hour =
-        Number(parts[0]);
-
-
-    const minute =
-        parts[1];
-
-
-    let period;
-
-
-    if (hour < 12) {
-
-        period =
-            "সকাল";
-
-    }
-
-    else if (hour === 12) {
-
-        period =
-            "দুপুর";
-
-    }
-
-    else if (hour < 18) {
-
-        period =
-            "বিকেল";
-
-    }
-
-    else {
-
-        period =
-            "রাত";
-
-    }
-
-
-    if (hour === 0) {
-
-        hour = 12;
-
-    }
-
-    else if (hour > 12) {
-
-        hour -= 12;
-
-    }
-
-
-    return (
-        period +
-        " " +
-        hour +
-        ":" +
-        minute
-    );
-
-}
-
-
-
-/* =====================================================
-   OPEN WHATSAPP
-===================================================== */
-
-function openWhatsApp(
-    dateString,
-    timeString
-) {
-
-    const date =
-        formatDate(
-            dateString
-        );
-
-
-    const time =
-        formatTime(
-            timeString
-        );
-
-
-    /*
-       WhatsApp message
-
-       No ❤️ emoji used.
-    */
+function openWhatsApp() {
 
     const message =
 `মায়াবিনী… ✨
 
-তাহলে আমাদের পরিচয়টা ${date} ${time}-এ শুরু হতে চলেছে। 🫶🏻
+তাহলে এতক্ষণে রাজি হলে? 🥹
 
-তোমার একটা call-এর অপেক্ষায় থাকব। 📞✨
+চলো, এবার সরাসরি WhatsApp-এ
+পরিচিত হওয়া যাক। 🫶🏻
 
-কথা হবে তাহলে… 🌸`;
+এতক্ষণ যা যা বললাম,
+এবার সেগুলো নিয়ে একটু
+সামনাসামনি chat করা যাক। 😌
+
+আমি অপেক্ষায় থাকলাম… 🌸`;
 
 
     const whatsappURL =
@@ -2466,7 +1811,13 @@ function openWhatsApp(
 
 
     /*
-       Open WhatsApp
+       Opens WhatsApp.
+
+       On mobile it normally opens
+       WhatsApp app.
+
+       On desktop it normally opens
+       WhatsApp Web.
     */
 
     window.location.href =
@@ -2552,15 +1903,12 @@ function showFinalNo() {
     `;
 
 
-    /*
-       Start at top
-    */
-
     scrollToTop();
 
 
     /*
-       YES
+       FINAL YES
+       -> WhatsApp screen
     */
 
     document
@@ -2569,7 +1917,7 @@ function showFinalNo() {
         )
         .addEventListener(
             "click",
-            showDateTime
+            showWhatsAppScreen
         );
 
 
@@ -2595,6 +1943,7 @@ function showFinalNo() {
         if (event) {
 
             event.preventDefault();
+
         }
 
 
@@ -2615,8 +1964,8 @@ function showFinalNo() {
 
 
         /*
-           Keep button completely inside
-           the visible area.
+           Keep the NO button completely
+           inside the visible box.
         */
 
         const maxX =
@@ -2671,8 +2020,7 @@ function showFinalNo() {
 
 
     /*
-       Desktop:
-       when mouse comes near the button
+       Desktop
     */
 
     no.addEventListener(
@@ -2682,8 +2030,7 @@ function showFinalNo() {
 
 
     /*
-       Mobile:
-       when finger touches it
+       Mobile
     */
 
     no.addEventListener(
@@ -2696,7 +2043,7 @@ function showFinalNo() {
 
 
     /*
-       Modern mobile / desktop pointer
+       Pointer devices
     */
 
     no.addEventListener(
@@ -2719,7 +2066,7 @@ function showFinalNo() {
 
 
 /* =====================================================
-   START WEBSITE
+   START
 ===================================================== */
 
 showOpening();
